@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		610AE1B21CEC387100CCE9EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 610AE1B11CEC387100CCE9EE /* main.m */; };
+		610AE1B51CEC387100CCE9EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 610AE1B41CEC387100CCE9EE /* AppDelegate.m */; };
+		610AE1B81CEC387100CCE9EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 610AE1B71CEC387100CCE9EE /* ViewController.m */; };
+		610AE1BB1CEC387100CCE9EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610AE1B91CEC387100CCE9EE /* Main.storyboard */; };
+		610AE1BE1CEC387100CCE9EE /* Tralarm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 610AE1BC1CEC387100CCE9EE /* Tralarm.xcdatamodeld */; };
+		610AE1C01CEC387100CCE9EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610AE1BF1CEC387100CCE9EE /* Assets.xcassets */; };
+		610AE1C31CEC387100CCE9EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610AE1C11CEC387100CCE9EE /* LaunchScreen.storyboard */; };
+		610AE1CE1CEC387100CCE9EE /* TralarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610AE1CD1CEC387100CCE9EE /* TralarmTests.m */; };
+		610AE1D91CEC387100CCE9EE /* TralarmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610AE1D81CEC387100CCE9EE /* TralarmUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		610AE1CA1CEC387100CCE9EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 610AE1A51CEC387100CCE9EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 610AE1AC1CEC387100CCE9EE;
+			remoteInfo = Tralarm;
+		};
+		610AE1D51CEC387100CCE9EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 610AE1A51CEC387100CCE9EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 610AE1AC1CEC387100CCE9EE;
+			remoteInfo = Tralarm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		610AE1AD1CEC387100CCE9EE /* Tralarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tralarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		610AE1B11CEC387100CCE9EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		610AE1B31CEC387100CCE9EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		610AE1B41CEC387100CCE9EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		610AE1B61CEC387100CCE9EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		610AE1B71CEC387100CCE9EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		610AE1BA1CEC387100CCE9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		610AE1BD1CEC387100CCE9EE /* Tralarm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tralarm.xcdatamodel; sourceTree = "<group>"; };
+		610AE1BF1CEC387100CCE9EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		610AE1C21CEC387100CCE9EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		610AE1C41CEC387100CCE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		610AE1C91CEC387100CCE9EE /* TralarmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TralarmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		610AE1CD1CEC387100CCE9EE /* TralarmTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TralarmTests.m; sourceTree = "<group>"; };
+		610AE1CF1CEC387100CCE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		610AE1D41CEC387100CCE9EE /* TralarmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TralarmUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		610AE1D81CEC387100CCE9EE /* TralarmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TralarmUITests.m; sourceTree = "<group>"; };
+		610AE1DA1CEC387100CCE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		610AE1AA1CEC387100CCE9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610AE1C61CEC387100CCE9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610AE1D11CEC387100CCE9EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		610AE1A41CEC387100CCE9EE = {
+			isa = PBXGroup;
+			children = (
+				610AE1AF1CEC387100CCE9EE /* Tralarm */,
+				610AE1CC1CEC387100CCE9EE /* TralarmTests */,
+				610AE1D71CEC387100CCE9EE /* TralarmUITests */,
+				610AE1AE1CEC387100CCE9EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		610AE1AE1CEC387100CCE9EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				610AE1AD1CEC387100CCE9EE /* Tralarm.app */,
+				610AE1C91CEC387100CCE9EE /* TralarmTests.xctest */,
+				610AE1D41CEC387100CCE9EE /* TralarmUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		610AE1AF1CEC387100CCE9EE /* Tralarm */ = {
+			isa = PBXGroup;
+			children = (
+				610AE1B31CEC387100CCE9EE /* AppDelegate.h */,
+				610AE1B41CEC387100CCE9EE /* AppDelegate.m */,
+				610AE1B61CEC387100CCE9EE /* ViewController.h */,
+				610AE1B71CEC387100CCE9EE /* ViewController.m */,
+				610AE1B91CEC387100CCE9EE /* Main.storyboard */,
+				610AE1BF1CEC387100CCE9EE /* Assets.xcassets */,
+				610AE1C11CEC387100CCE9EE /* LaunchScreen.storyboard */,
+				610AE1C41CEC387100CCE9EE /* Info.plist */,
+				610AE1BC1CEC387100CCE9EE /* Tralarm.xcdatamodeld */,
+				610AE1B01CEC387100CCE9EE /* Supporting Files */,
+			);
+			path = Tralarm;
+			sourceTree = "<group>";
+		};
+		610AE1B01CEC387100CCE9EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				610AE1B11CEC387100CCE9EE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		610AE1CC1CEC387100CCE9EE /* TralarmTests */ = {
+			isa = PBXGroup;
+			children = (
+				610AE1CD1CEC387100CCE9EE /* TralarmTests.m */,
+				610AE1CF1CEC387100CCE9EE /* Info.plist */,
+			);
+			path = TralarmTests;
+			sourceTree = "<group>";
+		};
+		610AE1D71CEC387100CCE9EE /* TralarmUITests */ = {
+			isa = PBXGroup;
+			children = (
+				610AE1D81CEC387100CCE9EE /* TralarmUITests.m */,
+				610AE1DA1CEC387100CCE9EE /* Info.plist */,
+			);
+			path = TralarmUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		610AE1AC1CEC387100CCE9EE /* Tralarm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 610AE1DD1CEC387100CCE9EE /* Build configuration list for PBXNativeTarget "Tralarm" */;
+			buildPhases = (
+				610AE1A91CEC387100CCE9EE /* Sources */,
+				610AE1AA1CEC387100CCE9EE /* Frameworks */,
+				610AE1AB1CEC387100CCE9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tralarm;
+			productName = Tralarm;
+			productReference = 610AE1AD1CEC387100CCE9EE /* Tralarm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		610AE1C81CEC387100CCE9EE /* TralarmTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 610AE1E01CEC387100CCE9EE /* Build configuration list for PBXNativeTarget "TralarmTests" */;
+			buildPhases = (
+				610AE1C51CEC387100CCE9EE /* Sources */,
+				610AE1C61CEC387100CCE9EE /* Frameworks */,
+				610AE1C71CEC387100CCE9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				610AE1CB1CEC387100CCE9EE /* PBXTargetDependency */,
+			);
+			name = TralarmTests;
+			productName = TralarmTests;
+			productReference = 610AE1C91CEC387100CCE9EE /* TralarmTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		610AE1D31CEC387100CCE9EE /* TralarmUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 610AE1E31CEC387100CCE9EE /* Build configuration list for PBXNativeTarget "TralarmUITests" */;
+			buildPhases = (
+				610AE1D01CEC387100CCE9EE /* Sources */,
+				610AE1D11CEC387100CCE9EE /* Frameworks */,
+				610AE1D21CEC387100CCE9EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				610AE1D61CEC387100CCE9EE /* PBXTargetDependency */,
+			);
+			name = TralarmUITests;
+			productName = TralarmUITests;
+			productReference = 610AE1D41CEC387100CCE9EE /* TralarmUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		610AE1A51CEC387100CCE9EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sam Gehman";
+				TargetAttributes = {
+					610AE1AC1CEC387100CCE9EE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 567KX7DD6P;
+					};
+					610AE1C81CEC387100CCE9EE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 567KX7DD6P;
+						TestTargetID = 610AE1AC1CEC387100CCE9EE;
+					};
+					610AE1D31CEC387100CCE9EE = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 567KX7DD6P;
+						TestTargetID = 610AE1AC1CEC387100CCE9EE;
+					};
+				};
+			};
+			buildConfigurationList = 610AE1A81CEC387100CCE9EE /* Build configuration list for PBXProject "Tralarm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 610AE1A41CEC387100CCE9EE;
+			productRefGroup = 610AE1AE1CEC387100CCE9EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				610AE1AC1CEC387100CCE9EE /* Tralarm */,
+				610AE1C81CEC387100CCE9EE /* TralarmTests */,
+				610AE1D31CEC387100CCE9EE /* TralarmUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		610AE1AB1CEC387100CCE9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610AE1C31CEC387100CCE9EE /* LaunchScreen.storyboard in Resources */,
+				610AE1C01CEC387100CCE9EE /* Assets.xcassets in Resources */,
+				610AE1BB1CEC387100CCE9EE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610AE1C71CEC387100CCE9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610AE1D21CEC387100CCE9EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		610AE1A91CEC387100CCE9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610AE1B81CEC387100CCE9EE /* ViewController.m in Sources */,
+				610AE1B51CEC387100CCE9EE /* AppDelegate.m in Sources */,
+				610AE1B21CEC387100CCE9EE /* main.m in Sources */,
+				610AE1BE1CEC387100CCE9EE /* Tralarm.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610AE1C51CEC387100CCE9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610AE1CE1CEC387100CCE9EE /* TralarmTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610AE1D01CEC387100CCE9EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610AE1D91CEC387100CCE9EE /* TralarmUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		610AE1CB1CEC387100CCE9EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 610AE1AC1CEC387100CCE9EE /* Tralarm */;
+			targetProxy = 610AE1CA1CEC387100CCE9EE /* PBXContainerItemProxy */;
+		};
+		610AE1D61CEC387100CCE9EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 610AE1AC1CEC387100CCE9EE /* Tralarm */;
+			targetProxy = 610AE1D51CEC387100CCE9EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		610AE1B91CEC387100CCE9EE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				610AE1BA1CEC387100CCE9EE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		610AE1C11CEC387100CCE9EE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				610AE1C21CEC387100CCE9EE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		610AE1DB1CEC387100CCE9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		610AE1DC1CEC387100CCE9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		610AE1DE1CEC387100CCE9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tralarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samgehman.Tralarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		610AE1DF1CEC387100CCE9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tralarm/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samgehman.Tralarm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		610AE1E11CEC387100CCE9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TralarmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samgehman.TralarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tralarm.app/Tralarm";
+			};
+			name = Debug;
+		};
+		610AE1E21CEC387100CCE9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TralarmTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samgehman.TralarmTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tralarm.app/Tralarm";
+			};
+			name = Release;
+		};
+		610AE1E41CEC387100CCE9EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TralarmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samgehman.TralarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tralarm;
+			};
+			name = Debug;
+		};
+		610AE1E51CEC387100CCE9EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TralarmUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samgehman.TralarmUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Tralarm;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		610AE1A81CEC387100CCE9EE /* Build configuration list for PBXProject "Tralarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610AE1DB1CEC387100CCE9EE /* Debug */,
+				610AE1DC1CEC387100CCE9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		610AE1DD1CEC387100CCE9EE /* Build configuration list for PBXNativeTarget "Tralarm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610AE1DE1CEC387100CCE9EE /* Debug */,
+				610AE1DF1CEC387100CCE9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		610AE1E01CEC387100CCE9EE /* Build configuration list for PBXNativeTarget "TralarmTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610AE1E11CEC387100CCE9EE /* Debug */,
+				610AE1E21CEC387100CCE9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		610AE1E31CEC387100CCE9EE /* Build configuration list for PBXNativeTarget "TralarmUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610AE1E41CEC387100CCE9EE /* Debug */,
+				610AE1E51CEC387100CCE9EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		610AE1BC1CEC387100CCE9EE /* Tralarm.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				610AE1BD1CEC387100CCE9EE /* Tralarm.xcdatamodel */,
+			);
+			currentVersion = 610AE1BD1CEC387100CCE9EE /* Tralarm.xcdatamodel */;
+			path = Tralarm.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 610AE1A51CEC387100CCE9EE /* Project object */;
+}
