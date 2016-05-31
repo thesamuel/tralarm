@@ -39,9 +39,9 @@
 
 @property (strong, nonatomic) NSMutableArray *nprAudioData;
 - (IBAction)downloadAction:(id)sender;
-- (IBAction)playAction:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *nprLabel;
-
+@property (strong, nonatomic) AVQueuePlayer *player;
+@property (strong, nonatomic) NSURL *directoryURL;
 
 @end
 

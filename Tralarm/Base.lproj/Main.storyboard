@@ -48,21 +48,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NH6-tm-lDI">
-                                <rect key="frame" x="20" y="231" width="67" height="30"/>
-                                <state key="normal" title="download"/>
+                                <rect key="frame" x="81" y="238" width="63" height="30"/>
+                                <state key="normal" title="NPR Test"/>
                                 <connections>
                                     <action selector="downloadAction:" destination="FX9-I9-hbh" eventType="touchUpInside" id="3hI-5x-Xyu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fze-R6-Bet">
-                                <rect key="frame" x="152" y="231" width="30" height="30"/>
-                                <state key="normal" title="play"/>
-                                <connections>
-                                    <action selector="playAction:" destination="FX9-I9-hbh" eventType="touchUpInside" id="iZb-7a-lrx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="npr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeL-FU-6Xr">
-                                <rect key="frame" x="100" y="209" width="26" height="21"/>
+                                <rect key="frame" x="82" y="209" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -79,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXZ-VE-RKu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5182" y="2699"/>
+            <point key="canvasLocation" x="5324" y="2757"/>
         </scene>
     </scenes>
 </document>
