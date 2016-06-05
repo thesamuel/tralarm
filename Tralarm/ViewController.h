@@ -42,6 +42,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *nprLabel;
 @property (strong, nonatomic) AVQueuePlayer *player;
 @property (strong, nonatomic) NSURL *directoryURL;
+- (IBAction)weatherAction:(id)sender;
+@property (strong, nonatomic) CLLocation *location;
+
 
 @end
 

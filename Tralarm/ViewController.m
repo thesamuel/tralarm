@@ -44,12 +44,21 @@
     }
     _locationManager.distanceFilter = kCLDistanceFilterNone;
     _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [_locationManager startUpdatingLocation];
+    [_locationManager startMonitoringSignificantLocationChanges];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    NSLog(@"%@", [locations lastObject]);
+    self.location = [locations lastObject];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
     [self.view endEditing:YES];
+}
+
+- (IBAction)testFireButton:(id)sender {
+    [self alarmFire:nil];
 }
 
 - (void)alarmSet:(UIDatePicker *)datePicker {
@@ -116,7 +125,7 @@
         count++;
     }
     
-    [self commuteDataRequest];
+    //[self mapsTest];
     
     /* Unfinished music feature
      self.backgroundMusicPlayer = [[AVAudioPlayer alloc]
@@ -127,22 +136,8 @@
     
 }
 
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-{
-    NSLog(@"%@", [locations lastObject]);
-}
-
 - (IBAction)mapsTest:(id)sender {
-    [self commuteDataRequest];
-}
-
-- (IBAction)testFireButton:(id)sender {
-    [self alarmFire:nil];
-}
-
-- (void)commuteDataRequest {
-    CLLocation *location = [_locationManager location];
-    CLLocationCoordinate2D coordinate = [location coordinate];
+    CLLocationCoordinate2D coordinate = [_location coordinate];
     
     NSString *coordinates = [NSString stringWithFormat:@"%@,%@",
                              [NSString stringWithFormat:@"%f", coordinate.latitude],
@@ -159,11 +154,11 @@
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData* data = [NSData dataWithContentsOfURL:url];
-        [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
+        [self performSelectorOnMainThread:@selector(mapsFetchedData:) withObject:data waitUntilDone:YES];
     });
 }
 
-- (void)fetchedData:(NSData *)responseData {
+- (void)mapsFetchedData:(NSData *)responseData {
     
     /* JSON Dump Debug
      NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
@@ -294,6 +289,9 @@
 }
 
 - (IBAction)downloadAction:(id)sender {
+    // TEST URL
+    //NSURL *url = [NSURL URLWithString: @"http://api.npr.org/query?id=3&date=2016-05-30&dateType=story&output=JSON&apiKey=MDIwMDE5ODU5MDE0NjM3MzYyMDc3NmE4MQ000"];
+    
     NSURL *url = [NSURL URLWithString: @"https://api.npr.org/query?id=3&output=JSON&apiKey=MDIwMDE5ODU5MDE0NjM3MzYyMDc3NmE4MQ000"];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData* nprData = [NSData dataWithContentsOfURL:url];
@@ -302,7 +300,6 @@
 }
 
 - (void)nprFetchedData:(NSData *)responseData {
-    
     NSDictionary *json = [NSJSONSerialization
                           JSONObjectWithData:responseData
                           options:NSJSONReadingMutableContainers
@@ -346,18 +343,92 @@
     _nprLabel.text = @"Loaded";
 }
 
--(void)itemDidFinishPlaying:(NSNotification *) notification {
+- (void)itemDidFinishPlaying:(NSNotification *) notification {
     NSLog(@"Deleting files at: %@", _directoryURL);
     [[NSFileManager defaultManager] removeItemAtURL:_directoryURL error:nil];
+}
+
+- (IBAction)weatherAction:(id)sender {
+    CLLocation *location = [_locationManager location];
+    CLLocationCoordinate2D coordinate = [location coordinate];
+    
+    NSString *urlString = [NSString stringWithFormat:@"http://forecast.weather.gov/MapClick.php?lat=%@&lon=%@&FcstType=json", [NSString stringWithFormat:@"%f", coordinate.latitude], [NSString stringWithFormat:@"%f", coordinate.longitude]];
+    NSLog(@"URL String=%@", urlString);
+    
+    NSURL *url = [NSURL URLWithString: urlString];
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSData* data = [NSData dataWithContentsOfURL:url];
+        [self performSelectorOnMainThread:@selector(weatherFetchedData:) withObject:data waitUntilDone:YES];
+    });
+}
+
+- (void)weatherFetchedData:(NSData *)responseData {
+    // THIS IS WHAT YOU NEED
+    CLLocation *location = [_locationManager location];
+    CLLocationCoordinate2D coordinate = [location coordinate];
+    
+    NSString *coordinates = [NSString stringWithFormat:@"%@,%@",
+                             [NSString stringWithFormat:@"%f", coordinate.latitude],
+                             [NSString stringWithFormat:@"%f", coordinate.longitude]];
+    NSLog(@"Coordinates=%@", coordinates);
+    
+    NSString *encodedQuery = [_addressBox.text stringByAddingPercentEncodingForFormData:YES];
+    NSLog(@"Encoded Query=%@", encodedQuery);
+    
+    NSString *urlString = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/geocode/json?latlng=%@&key=AIzaSyD-X_DhihbCFfMav28qrx8ulRr-Q8Y_ISI", coordinates];
+    NSLog(@"URL String=%@", urlString);
+    
+    NSURL *url = [NSURL URLWithString: urlString];
+    
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//        NSData* data = [NSData dataWithContentsOfURL:url];
+//        [self performSelectorOnMainThread:@selector(mapsFetchedData:) withObject:data waitUntilDone:YES];
+//    });
+    
+    
+    /////////////////////
+    
+     //JSON Dump Debug
+     NSString *jsonString = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
+     NSLog(@"Response JSON=%@", jsonString);
+    
+    NSDictionary *json = [NSJSONSerialization
+                          JSONObjectWithData:responseData
+                          options:NSJSONReadingMutableContainers
+                          error:nil];
+    
+    NSDictionary *currentObs = json[@"currentobservation"];
+    NSString *name = currentObs[@"name"];
+    NSString *temp = currentObs[@"Temp"];
+    NSString *desc = currentObs[@"Weather"];
+    NSDictionary *data = json[@"data"];
+    NSArray *futureTemps = data[@"temperature"];
+    NSString *tonightTemp = futureTemps[0];
+    
+    if ([desc isEqualToString:@"NA"]) {
+        desc = @"clear";
+    }
+    
+    // get better map data
+    NSArray *speechArray = @[@"It's about", temp, @"degrees Fahrenheit and", desc, @"here in beautiful", name, @",and tonight it will be about", tonightTemp, @"degrees."];
+
+    NSString *speechString = [speechArray componentsJoinedByString:@" "];
+    
+    AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:speechString];
+    utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-US"];
+    
+    [_synthesizer speakUtterance:utterance];
+    
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (void)dealloc {
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
