@@ -40,13 +40,6 @@
                                     <action selector="testFireButton:" destination="FX9-I9-hbh" eventType="touchUpInside" id="Ce5-02-Hi5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgU-03-LDK">
-                                <rect key="frame" x="81" y="171" width="64" height="30"/>
-                                <state key="normal" title="Map Test"/>
-                                <connections>
-                                    <action selector="mapsTest:" destination="FX9-I9-hbh" eventType="touchUpInside" id="1yA-qd-su7"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NH6-tm-lDI">
                                 <rect key="frame" x="81" y="238" width="63" height="30"/>
                                 <state key="normal" title="NPR Test"/>
@@ -65,6 +58,15 @@
                                 <state key="normal" title="Weather"/>
                                 <connections>
                                     <action selector="weatherAction:" destination="FX9-I9-hbh" eventType="touchUpInside" id="qkD-as-EJf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgU-03-LDK">
+                                <rect key="frame" x="63" y="171" width="100" height="30"/>
+                                <state key="normal" title="Commute Test"/>
+                                <connections>
+                                    <action selector="commuteAction:" destination="FX9-I9-hbh" eventType="touchUpInside" id="s0S-me-UUz"/>
+                                    <action selector="commuteButtonPressed:" destination="FX9-I9-hbh" eventType="touchUpInside" id="zZs-p8-cMr"/>
+                                    <action selector="mapsTest:" destination="FX9-I9-hbh" eventType="touchUpInside" id="1yA-qd-su7"/>
                                 </connections>
                             </button>
                         </subviews>

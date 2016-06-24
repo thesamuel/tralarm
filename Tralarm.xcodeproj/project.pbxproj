@@ -16,7 +16,14 @@
 		610AE1CE1CEC387100CCE9EE /* TralarmTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610AE1CD1CEC387100CCE9EE /* TralarmTests.m */; };
 		610AE1D91CEC387100CCE9EE /* TralarmUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 610AE1D81CEC387100CCE9EE /* TralarmUITests.m */; };
 		615753DB1CFD30FB00591026 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 615753D91CFD30FB00591026 /* Main.storyboard */; };
+		61A573191D1CEE2800D83D43 /* AlarmModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A573181D1CEE2800D83D43 /* AlarmModel.m */; };
+		61A5731C1D1D094600D83D43 /* SpeechModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A5731B1D1D094600D83D43 /* SpeechModel.m */; };
+		61A5731F1D1D0C4A00D83D43 /* CommuteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A5731E1D1D0C4A00D83D43 /* CommuteModel.m */; };
+		61A573221D1D0CA300D83D43 /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A573211D1D0CA300D83D43 /* LocationModel.m */; };
 		61D19B8D1CF05C1F000DC661 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D19B8C1CF05C1F000DC661 /* NSString+URLEncoding.m */; };
+		61FD680F1D1D193D001CFEFD /* CalendarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FD680E1D1D193D001CFEFD /* CalendarModel.m */; };
+		61FD68141D1D1CB1001CFEFD /* WeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FD68131D1D1CB1001CFEFD /* WeatherModel.m */; };
+		61FD68171D1D2442001CFEFD /* RadioModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FD68161D1D2442001CFEFD /* RadioModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +61,22 @@
 		610AE1D81CEC387100CCE9EE /* TralarmUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TralarmUITests.m; sourceTree = "<group>"; };
 		610AE1DA1CEC387100CCE9EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		615753DA1CFD30FB00591026 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Tralarm/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61A573171D1CEE2800D83D43 /* AlarmModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmModel.h; sourceTree = "<group>"; };
+		61A573181D1CEE2800D83D43 /* AlarmModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmModel.m; sourceTree = "<group>"; };
+		61A5731A1D1D094600D83D43 /* SpeechModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechModel.h; sourceTree = "<group>"; };
+		61A5731B1D1D094600D83D43 /* SpeechModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechModel.m; sourceTree = "<group>"; };
+		61A5731D1D1D0C4A00D83D43 /* CommuteModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommuteModel.h; sourceTree = "<group>"; };
+		61A5731E1D1D0C4A00D83D43 /* CommuteModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommuteModel.m; sourceTree = "<group>"; };
+		61A573201D1D0CA300D83D43 /* LocationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationModel.h; sourceTree = "<group>"; };
+		61A573211D1D0CA300D83D43 /* LocationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationModel.m; sourceTree = "<group>"; };
 		61D19B8B1CF05C1F000DC661 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
 		61D19B8C1CF05C1F000DC661 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		61FD680D1D1D193D001CFEFD /* CalendarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarModel.h; sourceTree = "<group>"; };
+		61FD680E1D1D193D001CFEFD /* CalendarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarModel.m; sourceTree = "<group>"; };
+		61FD68121D1D1CB1001CFEFD /* WeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherModel.h; sourceTree = "<group>"; };
+		61FD68131D1D1CB1001CFEFD /* WeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherModel.m; sourceTree = "<group>"; };
+		61FD68151D1D2442001CFEFD /* RadioModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioModel.h; sourceTree = "<group>"; };
+		61FD68161D1D2442001CFEFD /* RadioModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,17 +127,13 @@
 		610AE1AF1CEC387100CCE9EE /* Tralarm */ = {
 			isa = PBXGroup;
 			children = (
-				61D19B8B1CF05C1F000DC661 /* NSString+URLEncoding.h */,
-				61D19B8C1CF05C1F000DC661 /* NSString+URLEncoding.m */,
 				610AE1B31CEC387100CCE9EE /* AppDelegate.h */,
 				610AE1B41CEC387100CCE9EE /* AppDelegate.m */,
-				610AE1B61CEC387100CCE9EE /* ViewController.h */,
-				610AE1B71CEC387100CCE9EE /* ViewController.m */,
-				610AE1BF1CEC387100CCE9EE /* Assets.xcassets */,
+				61D19B8B1CF05C1F000DC661 /* NSString+URLEncoding.h */,
+				61D19B8C1CF05C1F000DC661 /* NSString+URLEncoding.m */,
 				615753D91CFD30FB00591026 /* Main.storyboard */,
-				610AE1C11CEC387100CCE9EE /* LaunchScreen.storyboard */,
-				610AE1C41CEC387100CCE9EE /* Info.plist */,
-				610AE1BC1CEC387100CCE9EE /* Tralarm.xcdatamodeld */,
+				61FD68101D1D1C18001CFEFD /* Models */,
+				61FD68111D1D1C23001CFEFD /* View Controllers */,
 				610AE1B01CEC387100CCE9EE /* Supporting Files */,
 			);
 			path = Tralarm;
@@ -125,6 +142,10 @@
 		610AE1B01CEC387100CCE9EE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				610AE1BF1CEC387100CCE9EE /* Assets.xcassets */,
+				610AE1C11CEC387100CCE9EE /* LaunchScreen.storyboard */,
+				610AE1C41CEC387100CCE9EE /* Info.plist */,
+				610AE1BC1CEC387100CCE9EE /* Tralarm.xcdatamodeld */,
 				610AE1B11CEC387100CCE9EE /* main.m */,
 			);
 			name = "Supporting Files";
@@ -146,6 +167,36 @@
 				610AE1DA1CEC387100CCE9EE /* Info.plist */,
 			);
 			path = TralarmUITests;
+			sourceTree = "<group>";
+		};
+		61FD68101D1D1C18001CFEFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61A573171D1CEE2800D83D43 /* AlarmModel.h */,
+				61A573181D1CEE2800D83D43 /* AlarmModel.m */,
+				61FD680D1D1D193D001CFEFD /* CalendarModel.h */,
+				61FD680E1D1D193D001CFEFD /* CalendarModel.m */,
+				61A5731D1D1D0C4A00D83D43 /* CommuteModel.h */,
+				61A5731E1D1D0C4A00D83D43 /* CommuteModel.m */,
+				61A573201D1D0CA300D83D43 /* LocationModel.h */,
+				61A573211D1D0CA300D83D43 /* LocationModel.m */,
+				61FD68151D1D2442001CFEFD /* RadioModel.h */,
+				61FD68161D1D2442001CFEFD /* RadioModel.m */,
+				61A5731A1D1D094600D83D43 /* SpeechModel.h */,
+				61A5731B1D1D094600D83D43 /* SpeechModel.m */,
+				61FD68121D1D1CB1001CFEFD /* WeatherModel.h */,
+				61FD68131D1D1CB1001CFEFD /* WeatherModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		61FD68111D1D1C23001CFEFD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				610AE1B61CEC387100CCE9EE /* ViewController.h */,
+				610AE1B71CEC387100CCE9EE /* ViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +335,15 @@
 				61D19B8D1CF05C1F000DC661 /* NSString+URLEncoding.m in Sources */,
 				610AE1B81CEC387100CCE9EE /* ViewController.m in Sources */,
 				610AE1B51CEC387100CCE9EE /* AppDelegate.m in Sources */,
+				61FD680F1D1D193D001CFEFD /* CalendarModel.m in Sources */,
+				61A5731C1D1D094600D83D43 /* SpeechModel.m in Sources */,
+				61A5731F1D1D0C4A00D83D43 /* CommuteModel.m in Sources */,
+				61A573221D1D0CA300D83D43 /* LocationModel.m in Sources */,
 				610AE1B21CEC387100CCE9EE /* main.m in Sources */,
+				61FD68141D1D1CB1001CFEFD /* WeatherModel.m in Sources */,
 				610AE1BE1CEC387100CCE9EE /* Tralarm.xcdatamodeld in Sources */,
+				61A573191D1CEE2800D83D43 /* AlarmModel.m in Sources */,
+				61FD68171D1D2442001CFEFD /* RadioModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
